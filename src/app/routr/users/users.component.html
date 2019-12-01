@@ -1,0 +1,19 @@
+<p>users works!</p>
+<ul>
+    <li><a routerLink="/user/1">user1</a></li>
+    <li><a routerLink="/user/2">user2</a></li>
+    <li><a routerLink="/user/3">user3</a></li>
+    <li><a routerLink="/user/4">user4</a></li>
+</ul>
+
+<table border="2" *ngIf='user'>
+    <tr>
+        <th>name</th>
+        <th>username</th>
+        <th>email</th>
+    </tr>
+    <tr>
+        <td>{{user['name']}}</td>
+        <td>{{user['username']}}</td>
+        <td>{{user['email']}}</td>
+    </tr>
